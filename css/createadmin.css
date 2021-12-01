@@ -1,0 +1,11 @@
+.info {
+  text-align: center;
+  width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #f2f3f4;
+  box-shadow: 5px 10px 18px #cac7c7;
+}
+.signup {
+  text-align: center;
+}

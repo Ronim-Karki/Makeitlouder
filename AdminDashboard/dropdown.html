@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #030303;
+        height: 100vh;
+      }
+
+      .value {
+        font-size: 150px;
+        display: block;
+        font-weight: bold;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="value" akhi="1000">0</div>
+      <div class="value" akhi="500">0</div>
+      <div class="value" akhi="700">0</div>
+      <div class="value" akhi="999">0</div>
+    </div>
+    <script>
+      const counters = document.querySelectorAll('.value');
+      const speed = 200;
+
+      counters.forEach((counter) => {
+        const animate = () => {
+          const value = +counter.getAttribute('akhi');
+          const data = +counter.innerText;
+
+          const time = value / speed;
+          if (data < value) {
+            counter.innerText = Math.ceil(data + time);
+            setTimeout(animate, 1);
+          } else {
+            counter.innerText = value;
+          }
+        };
+
+        animate();
+      });
+    </script>
+  </body>
+</html>

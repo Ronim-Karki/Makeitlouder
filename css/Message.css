@@ -1,0 +1,16 @@
+.delete .btn .btn-danger {
+  height: 2px;
+  font-size: 5px;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  margin-left: 500px;
+  position: static;
+  background-color: #dadedf;
+  color: black;
+}

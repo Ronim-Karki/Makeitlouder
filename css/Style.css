@@ -1,0 +1,288 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 50px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 0px 10px 8px 15px;
+
+  border-bottom: #818181;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  padding-bottom: 25px;
+  transition: 0.3s;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+.sidenav a:active {
+  color: #f1f1f1;
+}
+hr {
+  color: #818181;
+}
+.Opac {
+  opacity: 1;
+  display: inline-block;
+  margin-top: -30px;
+  padding-left: 50px;
+
+  position: static;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* //.sidenav a span {
+ // display: inline-block;
+  opacity: 0;
+  pointer-events: none;
+} */
+/* .sidenav .active a span {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  font-size: 36px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  display: inline-block;
+  text-align: right;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.sidenav a i {
+  float: left;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.sidenav .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.8s;
+  padding-top: 20px;
+  padding-left: 100px;
+}
+#main .username {
+  float: right;
+  margin-top: -80px;
+  margin-left: 0px;
+  display: inline;
+
+  position: static;
+}
+
+#main .dropbtn {
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+#main .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#main .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#main .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+
+#main .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#main .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#main .dropdown:hover .dropbtn {
+  font-size: 30px;
+  transform: rotate(360deg);
+  transform-origin: center top;
+  transform-box: content-box;
+  transition: 0.3s;
+}
+#main .logout {
+  border-radius: 25px;
+  border: none;
+  display: inline-block;
+
+  color: white;
+
+  position: static;
+  background-color: #111;
+  font-size: 20px;
+}
+#main .logout:hover {
+  background-color: black;
+  box-shadow: 0 4px 15px 0 rgba(209, 204, 204, 0.1),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  transition: 0.3s;
+}
+.Report {
+  text-align: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 10%;
+  margin-top: 100px;
+  transition: margin-left 0.8s;
+}
+.Report .box1 {
+  height: 250px;
+  width: 500px;
+  background-color: #fa8b6a;
+  opacity: 1;
+  float: left;
+  border-radius: 25px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.Report .box2 {
+  height: 250px;
+  width: 500px;
+  float: left;
+  display: inline;
+  background-color: #fa8b6a;
+  opacity: 1;
+  border-radius: 25px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.Report .box1 span {
+  font-size: 50px;
+  color: white;
+}
+.Report .box2 span {
+  font-size: 50px;
+  color: white;
+}
+.Report .box1 .value {
+  color: white;
+  font-size: 50px;
+}
+.Report .box2 .value {
+  color: white;
+  font-size: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .Report {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  .Report .box1 {
+    height: 250px;
+    width: 500px;
+    background-color: #fa8b6a;
+    opacity: 1;
+    float: left;
+    border-radius: 25px;
+    margin-right: 25px;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+  .Report .box2 {
+    height: 250px;
+    width: 500px;
+    float: left;
+    display: inline;
+    background-color: #fa8b6a;
+    opacity: 1;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+}
